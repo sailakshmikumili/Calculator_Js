@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/html">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/html">
+    <title>The Unconventional Calculator</title>
+    <link rel="stylesheet" href="/asserts/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/html"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/html"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  
+
+  <body>
+    <header>The Unconventional Calculator</header>
+
+    <div class="numbers">
+      <div class="enterNumber">
+        <div>
+          <input id="input_number" class="inputNumber" type="text"/>
+        </div>
+      </div>
+      <div class="signs">
+        <button type="button" id="btn-add" onclick="add()">+</button>
+        <button type="button" id="btn-subtract" onclick="sub()">-</button>
+        <button type="button" id="btn-multiply" onclick="multiply()">*</button>
+        <button type="button" id="btn-divide" onclick="division()">/</button>
+      </div>
+    </div>
+    <div class="result">
+      <div id="current-Calculation"></div>
+      Result: <span id="current-result" type="number">0</span>
+    </div>
+
+    <script src="asserts/script.js"></script>
+    <link rel="stylesheet" href="../node_modules/jquery/dist/jquery.js" type="text/html">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/html">
+  </body>
+</html>
